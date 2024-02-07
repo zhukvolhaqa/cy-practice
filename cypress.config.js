@@ -1,7 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  projectId: "shaoem",
+  projectId: "shaoem", //npx cypress run --record --key 360a2006-3b62-4135-890b-3b598b8a652e
   e2e: {
     baseUrl: 'https://demowebshop.tricentis.com/', //home page
     excludeSpecPattern: ['**/1-getting-started', '**/2-advanced-examples'], //exclude those folders from test run
