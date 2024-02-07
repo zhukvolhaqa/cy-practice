@@ -2,6 +2,10 @@
   "devDependencies": {
     "cypress": "^13.6.4"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhukvolhaqa/cy-practice.git"
+  },
   "scripts": { 
     "cy:cloud_run": "npx cypress run --record --key 360a2006-3b62-4135-890b-3b598b8a652e",
     "cy:cloud_parallel": "npx cypress run --record --key 360a2006-3b62-4135-890b-3b598b8a652e --parallel --ci-build-id 2",
