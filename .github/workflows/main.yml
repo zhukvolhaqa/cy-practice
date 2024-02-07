@@ -1,0 +1,21 @@
+# GitHub Actions
+# https://docs.github.com/en/actions/using-workflows
+name: Cypress single tests
+
+on: [push, workflow_dispatch]
+
+jobs:
+  test1:
+    name: Cypress test
+    runs-on: ubuntu-22.04
+    steps:
+    - uses: actions/checkout@v4
+
+    # install a specific version of Node using
+    # https://github.com/actions/setup-node
+    - name: Use Node.js 20
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+
+
